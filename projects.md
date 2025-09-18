@@ -1,24 +1,26 @@
 ---
-name: Prof. Jakob Eriksson
-title: Recent Rust enthusiast
+name: Chesta Dewangan
+title: Master's Student
 ---
+Below are some of the projects I have worked on or am working on right now.
 
-# Some Current Research Projects
+#
+**Master's Project**\
+An interdisciplinary project at the intersection of Human-Computer Interaction and Machine Learning, focusing on improving how users interact with evolving interfaces.
 
-Below is a sampling of current research projects we are pursuing in my group. I am always open to exploring new ideas, so if you have something you are passionate about, and which you think I can advise you effectively on, then by all means get in touch!
+#
+**Chicago 311 Service Requests Visualization**\
+An interactive visual analytics project to explore Chicago’s 311 service request data. Using Vega, Vega-Lite, and Curio, I created visualizations to get insight into how city services are utilized by analyzing the distribution of service requests across neighborhoods and zip codes. Compare request volumes by department and examine year-over-year trends. Map the geospatial spread of service requests to identify clusters and hotspots. Investigate correlations among features to uncover patterns in request types and service delivery.
 
-# Compound Processes
-_with Nilanjana Basu_ 
-Modern computer software commonly consists of groups of individual programs working together toward the same goal. This *common purpose* model is not reflected in the way the software actually executes today. Instead, each program runs in carefully guarded isolation, communicating via secure system calls. This project introduces a new concept, a “compound process” which better reflects the realities of modern software. A compound process may host several “guest” programs in a single trust domain, eliminating expensive and often redundant safeguards between components of a single software stack, to yield substantial performance benefits. 
+#
+**Digital vs Physical Note-Taking: Understanding Users’ Preferences**\
+This study examined differences between digital and physical note-taking in academic settings, analyzing performance, user preferences, and challenges. Task performance, retrieval times, and collected interview data were measured using a mixed-method approach.
 
-# Efficient Multi-Threading with Trust<T> 
-_with Ben Baenen_
+#
+**PrognosiX**\
+A tool built to assist medical specialists in early detection of chronic kidney disease (CKD) by analyzing patient data and developing predictive models. The system incorporates data visualization to present patient information clearly and simulate CKD risk, supporting more informed decision-making.
 
-Trust<T> is a Rust-based message-passing framework which aims to replace locking and shared objects with a particularly efficient form of message passing. 
-With Trust<T>, a shared object is _entrusted_ to a single core, which is responsible for all accesses to this object. 
-This ensures race-freedom on the object, eliminates lock contention, and dramatically constrains opportunities for false sharing, often resulting in dramatically higher performance. 
+# 
+**Painting Application**\
+An Android app that lets users draw freehand and transforms inputs into precise, standardized shapes using Natural User Interfaces (NUI). The app recognizes basic shapes (circles, squares, triangles) as well as custom ones, and supports gesture commands like ‘+’ to start a new drawing or ‘✓’ to save, simplifying interaction without traditional menus or buttons.
 
-# Rackwide Computing
-_with Noaman Ahmad_
-
-Building on Trust<T> and its elimination of shared memory computing, Rackwide Computing is the idea that we can program against an entire rack of computers as if it was a single one. With Rackwide computing, we use Trust<T> delegation over RDMA to create a programming framework that seamlessly scales programs to run across multiple machines. In essence, a single _process_ may span an entire rack, allowing (mostly) normal programs to scale to thousands of cores, without the complexities and inefficiencies of cluster computing. 
